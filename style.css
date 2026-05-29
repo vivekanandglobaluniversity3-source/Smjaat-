@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.test-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    padding: 30px;
+}
+
+h2 {
+    color: #2b6cb0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    color: #4a5568;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    background: #2b6cb0;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #1a446c;
+}
+
+.quiz-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.timer {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e53e3e;
+    text-align: right;
+}
+
+.progress-container {
+    background: #edf2f7;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: #48bb78;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+#question-text {
+    font-size: 18px;
+    color: #1a202c;
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    background: #f7fafc;
+    color: #2d3748;
+    border: 2px solid #e2e8f0;
+    text-align: left;
+    margin-top: 8px;
+    padding: 12px;
+    font-weight: normal;
+}
+
+.option-btn:hover {
+    background: #edf2f7;
+}
+
+.option-btn.correct {
+    background: #c6f6d5 !important;
+    border-color: #48bb78 !important;
+    color: #22543d;
+}
+
+.option-btn.wrong {
+    background: #fed7d7 !important;
+    border-color: #f56565 !important;
+    color: #742a2a;
+}
+
+.quiz-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 15px;
+}
+
+#question-counter {
+    color: #718096;
+}
+
+.result-box {
+    text-align: center;
+}
+
+.score-text {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.percentage {
+    font-size: 40px;
+    font-weight: bold;
+    color: #38a169;
+    margin-bottom: 20px;
+}
