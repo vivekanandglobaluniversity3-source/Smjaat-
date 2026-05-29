@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajasthan LDC Live Test Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="test-container">
+        <div class="start-box" id="start-box">
+            <h2>Rajasthan LDC - Live Mock Test</h2>
+            <p><strong>विषय:</strong> सामान्य विज्ञान (विद्युत - Electricity)</p>
+            <p><strong>कुल प्रश्न:</strong> 5 | <strong>समय:</strong> 50 सेकंड</p>
+            <button id="start-btn">टेस्ट शुरू करें</button>
+        </div>
+
+        <div class="quiz-box" id="quiz-box" style="display: none;">
+            <div class="quiz-header">
+                <span class="timer" id="timer">समय शेष: 50s</span>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h3 id="question-text">प्रश्न यहाँ दिखाई देगा</h3>
+                <div class="options-container" id="options-container"></div>
+            </div>
+
+            <div class="quiz-footer">
+                <span id="question-counter">प्रश्न 1 of 5</span>
+                <button id="next-btn" style="display: none;">अगला प्रश्न</button>
+            </div>
+        </div>
+
+        <div class="result-box" id="result-box" style="display: none;">
+            <h2>परीक्षा परिणाम (Test Result)</h2>
+            <div class="score-text" id="score-text">आपने 5 में से 0 सही किए।</div>
+            <div class="percentage" id="percentage">0%</div>
+            <button id="restart-btn">दोबारा प्रयास करें</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
